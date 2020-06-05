@@ -1,9 +1,6 @@
 import { registerMicroApps, runAfterFirstMounted, setDefaultMountApp, start, initGlobalState } from '../../es';
 import './index.less';
 
-// for angular subapp
-import 'zone.js';
-
 /**
  * 主应用 **可以使用任意技术栈**
  * 以下分别是 React 和 Vue 的示例，可切换尝试
@@ -37,27 +34,6 @@ registerMicroApps(
       container: '#subapp-viewport',
       loader,
       activeRule: '/react15',
-    },
-    {
-      name: 'vue',
-      entry: '//localhost:7101',
-      container: '#subapp-viewport',
-      loader,
-      activeRule: '/vue',
-    },
-    {
-      name: 'angular9',
-      entry: '//localhost:7103',
-      container: '#subapp-viewport',
-      loader,
-      activeRule: '/angular9',
-    },
-    {
-      name: 'purehtml',
-      entry: '//localhost:7104',
-      container: '#subapp-viewport',
-      loader,
-      activeRule: '/purehtml',
     },
   ],
   {

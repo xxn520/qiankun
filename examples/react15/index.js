@@ -7,7 +7,6 @@ import ReactDOM from 'react-dom';
 import App from './App';
 import './public-path';
 
-import 'antd/dist/antd.min.css';
 import './index.css';
 
 export async function bootstrap() {
